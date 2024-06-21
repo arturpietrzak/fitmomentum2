@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #555555;
+  padding: 0 0.5rem;
+
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    gap: 0.5rem;
+
+    .logoText {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-wrap: nowrap;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    .logoImage {
+      object-fit: scale-down;
+      height: 3rem;
+      width: 100%;
+
+      @media only screen and (max-width: 600px) {
+        height: 2rem;
+      }
+    }
+  }
+}

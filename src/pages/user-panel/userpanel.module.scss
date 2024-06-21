@@ -1,0 +1,72 @@
+.main {
+  .userpanel {
+    padding: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    max-height: 90svh;
+    grid-template-columns: 260px auto;
+    overflow-y: scroll;
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.payments {
+  & > div {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      background-color: #8ac72c;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      min-width: 20rem;
+
+      label {
+        color: #ffffff;
+      }
+
+      select {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.survey {
+  & > div {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      background-color: #8ac72c;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      min-width: 30rem;
+
+      @media only screen and (max-width: 600px) {
+        min-width: 20rem;
+      }
+    }
+
+    label {
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}

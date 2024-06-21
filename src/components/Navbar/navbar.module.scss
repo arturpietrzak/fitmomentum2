@@ -1,0 +1,61 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 0.5rem;
+  height: 4rem;
+  transition: backdrop-filter 0.2s, background-color 0.2s;
+
+  &.blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(106, 160, 21, 0.7);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #eeeeee;
+    gap: 0.5rem;
+
+    .logoText {
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .logoImage {
+      object-fit: scale-down;
+      height: 3rem;
+      width: 100%;
+
+      @media only screen and (max-width: 600px) {
+        height: 2rem;
+      }
+    }
+  }
+
+  .myAccount {
+    font-size: 1.125rem;
+    color: #eeeeee;
+    border: 2px solid #eeeeee;
+    z-index: 100;
+    background: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.2s color, 0.2s background-color;
+    cursor: pointer;
+
+    &:hover {
+      color: #111111;
+      background-color: #eeeeee;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.btn-default {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  color: #eeeeee;
+  border: 2px solid #eeeeee;
+  background: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    color: #111111;
+    background-color: #eeeeee;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.875rem;
+  }
+}
+
+p {
+  margin: 0;
+}

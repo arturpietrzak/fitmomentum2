@@ -1,0 +1,45 @@
+.main {
+  display: grid;
+  grid-template-columns: 250px 250px auto;
+  height: 100vh;
+  overflow-y: scroll;
+
+  & > div:not(:last-child) {
+    border-right: 1px solid black;
+  }
+
+  .users {
+    .userElement {
+      padding: 0.25rem;
+      &:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
+    }
+
+    .selected {
+      background-color: #ddd;
+    }
+  }
+
+  .plans {
+    .planElement {
+      padding: 0.25rem;
+      &:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
+    }
+
+    .selected {
+      background-color: #ddd;
+    }
+  }
+
+  .editor {
+    padding: 1rem;
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
